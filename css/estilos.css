@@ -677,22 +677,69 @@ strong {
   font-weight: var(--font-weight-bold);
   line-height: normal;
 }
-.carrusel-imagenes {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: scroll;
+
+/*---------------------------------------
+  CARRUSEL DE IMÁGENES (GLIDER)            
+-----------------------------------------*/
+.carrusel__contenedor {
+  position: relative;
   z-index: 3;
 }
 
-.carrusel-imagenes_elemento {
-  flex: 1 0 auto;
-  margin: 0 50px;
-  border-radius: var(--border-radius-chico);
-  border: 1px solid var(--color-negro);
-  width: 400px;
-  height: 400px;
-  z-index: 3;
+.carrusel__anterior,
+.carrusel__siguiente {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  align-items: center;
+  background: var(--color-bg-btn-personalizado);
+  color: var(--color-blanco);
+  font-size: var(--font-size-h3);
+  opacity: 50%;
 }
+
+.carrusel__anterior:hover,
+.carrusel__siguiente:hover {
+  background: var(--color-bg-btn-personalizado-hover);
+  opacity: 100%;
+}
+
+.carrusel__anterior {
+  left: -45px;
+}
+
+.carrusel__siguiente {
+  right: -45px;
+}
+
+.carrusel__lista {
+  overflow: hidden;
+}
+
+.carrusel__elemento {
+  width: 500px;
+  height: 300px;
+  margin: 0 5px;
+}
+
+.carrusel__elemento picture {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.carrusel__elemento img {
+  border-radius: var(--border-radius-chico);
+}
+
 
 /*---------------------------------------
   VOLUNTARIOS          
@@ -759,8 +806,6 @@ strong {
   overflow: hidden;
   padding: 50px;
 }
-
-
 
 
 /*---------------------------------------
@@ -1579,6 +1624,11 @@ blockquote::before {
     padding-right: 50px;
     min-width: inherit;
     min-height: inherit;
+  }
+  .carrusel__indicadores,
+  .carrusel__anterior,
+  .carrusel__siguiente {
+    display: none;
   }
 }
 

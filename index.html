@@ -9,6 +9,7 @@
 
     <!-- Archivos CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/glider.min.css">
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/estilos.css" />
 
@@ -109,45 +110,24 @@
               <a class="nav-link click-scroll" href="#top">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link click-scroll" href="#section_2">Nosotros</a>
+              <a class="nav-link click-scroll" href="#section_2">Bienvenidos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link click-scroll" href="#section_3">Causes</a>
+              <a class="nav-link click-scroll" href="#section_3">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link click-scroll" href="#section_4">Volunteer</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link click-scroll dropdown-toggle"
-                href="#section_5"
-                id="navbarLightDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >News</a
-              >
-              <ul
-                class="dropdown-menu dropdown-menu-light"
-                aria-labelledby="navbarLightDropdownMenuLink"
-              >
-                <li>
-                  <a class="dropdown-item" href="news.html">News Listing</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="news-detail.html"
-                    >News Detail</a
-                  >
-                </li>
-              </ul>
+              <a class="nav-link click-scroll" href="#section_4">Hogar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link click-scroll" href="#section_6">Contacto</a>
+              <a class="nav-link click-scroll" href="#section_6">Galerías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#footer">Contacto</a>
             </li>
             <li class="nav-item ms-3">
               <a
                 class="nav-link custom-btn custom-border-btn btn"
-                href="#section4"
+                href="#section_5"
                 >Colaborar</a
               >
             </li>
@@ -287,7 +267,7 @@
       </section>
 
       <!-- Sección de bienvenida -->
-      <section class="section-padding">
+      <section class="section-padding" id="section_2">
         <div class="container">
           <div class="row">
             <!-- Título -->
@@ -318,7 +298,7 @@
               <div
                 class="featured-block d-flex justify-content-center align-items-center"
               >
-                <a href="#section_2" class="d-block">
+                <a href="#section_3" class="d-block">
                   <img
                     src="imagenes/iconos/conocenos.png"
                     class="featured-block-image img-fluid"
@@ -336,7 +316,7 @@
               <div
                 class="featured-block d-flex justify-content-center align-items-center"
               >
-                <a href="#" class="d-block">
+                <a href="#section_4" class="d-block">
                   <img
                     src="imagenes/iconos/nuestracasa.png"
                     class="featured-block-image img-fluid"
@@ -354,7 +334,7 @@
               <div
                 class="featured-block d-flex justify-content-center align-items-center"
               >
-                <a href="#section4" class="d-block">
+                <a href="#section_5" class="d-block">
                   <img
                     src="imagenes/iconos/donar.png"
                     class="featured-block-image img-fluid"
@@ -371,7 +351,7 @@
       </section>
 
       <!-- Sección Nosotros -->
-      <section class="section-padding section-bg" id="section_2">
+      <section class="section-padding section-bg" id="section_3">
         <div class="container">
           <div class="row">
             <!-- Imagen de la sección -->
@@ -467,19 +447,239 @@
         </div>
       </section>
 
+      <!-- Sección Nuestro hogar -->
       <section class="volunteer-section section-padding" id="section_4">
         <div class="container">
           <div class="row">
             <div class="text-center">
               <h2 class="text-white">Nuestro hogar</h2>
+              <p class="text-white">
+                En Munay Huasi, trabajamos en instalaciones que nos permiten brindar un servicio integral y personalizado a cada persona con discapacidad que atendemos. Conocé nuestro espacio en esta galería de fotos.
+              </p>
             </div>
-            
+            <div class="carrusel">
+              <div class="carrusel__contenedor">
+                
+                <div class="carrusel__lista">
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-1.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-1.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-1.jpg" alt="Foto hogar 1">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-2.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-2.jpg.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-2.jpg" alt="Foto hogar 2">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-3.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-3.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-3.jpg" alt="Foto hogar 3">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-4.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-4.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-4.jpg" alt="Foto hogar 4">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-5.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-5.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-5.jpg" alt="Foto hogar 5">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-6.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-6.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-6.jpg" alt="Foto hogar 6">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-7.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-7.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-7.jpg" alt="Foto hogar 7">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-8.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-8.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-8.jpg" alt="Foto hogar 8">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-9.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-9.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-9.jpg" alt="Foto hogar 9">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-10.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-10.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-10.jpg" alt="Foto hogar 10">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-11.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-11.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-11.jpg" alt="Foto hogar 11">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-12.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-12.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-12.jpg" alt="Foto hogar 12">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-13.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-13.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-13.jpg" alt="Foto hogar 13">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-14.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-14.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-14.jpg" alt="Foto hogar 14">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-15.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-15.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-15.jpg" alt="Foto hogar 15">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-16.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-16.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-16.jpg" alt="Foto hogar 16">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-17.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-17.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-17.jpg" alt="Foto hogar 17">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-18.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-18.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-18.jpg" alt="Foto hogar 18">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-19.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-19.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-19.jpg" alt="Foto hogar 19">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-20.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-20.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-20.jpg" alt="Foto hogar 20">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-21.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-21.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-21.jpg" alt="Foto hogar 21">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-22.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-22.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-22.jpg" alt="Foto hogar 22">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-23.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-23.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-23.jpg" alt="Foto hogar 23">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-24.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-24.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-24.jpg" alt="Foto hogar 24">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-25.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-25.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-25.jpg" alt="Foto hogar 25">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-26.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-26.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-26.jpg" alt="Foto hogar 26">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-27.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-27.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-27.jpg" alt="Foto hogar 27">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-28.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-28.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-28.jpg" alt="Foto hogar 28">
+                    </picture>
+                  </div>
+                  <div class="carrusel__elemento">
+                    <picture>
+                      <source srcset="./imagenes/casa/hogar-29.webp" type="image/webp">
+                      <source srcset="./imagenes/casa/hogar-29.jpg" type="image/jpeg">
+                      <img src="./imagenes/casa/hogar-29.jpg" alt="Foto hogar 29">
+                    </picture>
+                  </div>
+                </div>
+                <button aria-label="Anterior" class="carrusel__anterior">
+                  <i class="bi bi-caret-left-fill"></i>
+                </button>
+                <button aria-label="Siguiente" class="carrusel__siguiente">
+                  <i class="bi bi-caret-right-fill"></i>
+                </button>
+              <div role="tablist" class="carrusel__indicadores"></div>
+            </div>
+          
           </div>
         </div>
       </section>
 
       <!-- Sección de donación -->
-      <section class="cta-section section-padding section-bg" id="section4">
+      <section class="cta-section section-padding section-bg" id="section_5">
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-5 col-12 ms-auto">
@@ -519,7 +719,7 @@
     </main>
 
     <!-- Footer de la web -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-12 mb-4">
@@ -643,5 +843,6 @@
     <script src="js/click-scroll.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
+    <script src="./js/carrusel.js"></script>
   </body>
 </html>
