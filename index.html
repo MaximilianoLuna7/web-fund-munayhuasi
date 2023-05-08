@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,11 +13,13 @@
     <link rel="stylesheet" href="css/estilos.css" />
 
     <!-- Archivos de imágenes -->
-    <link rel="preload" as="image" href="imagenes/logo-sinborde.webp" type="image/webp">
-
-
+    <link
+      rel="preload"
+      as="image"
+      href="imagenes/logo-sinborde.webp"
+      type="image/webp"
+    />
   </head>
-
 
   <body id="section_1">
     <!-- Header (Encabezado) -->
@@ -28,13 +29,20 @@
           <div class="col-lg-8 col-12 d-flex flex-wrap">
             <p class="d-flex me-4 mb-0">
               <i class="bi-geo-alt me-2"></i>
-              Dirección de la Fundación
+              Gorriti 301 - Tartagal (Salta)
+            </p>
+
+            <p class="d-flex me-4 mb-0">
+              <i class="bi-envelope me-2"></i>
+
+              <a href="mailto:munaywasi_cdd@hotmail.com">
+                munaywasi_cdd@hotmail.com
+              </a>
             </p>
 
             <p class="d-flex mb-0">
-              <i class="bi-envelope me-2"></i>
-
-              <a href="mailto:info@company.com"> e-mail de la Fundación </a>
+              <i class="bi-telephone me-2"></i>
+              03873-424149
             </p>
           </div>
 
@@ -65,55 +73,568 @@
       </div>
     </header>
 
+    <!-- Barra de Navegación con Logo -->
     <nav class="navbar navbar-expand-lg bg-light shadow-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                  <img src="imagenes/logo-sinborde.png" srcset="imagenes/logo-sinborde.webp, imagenes/logo-sinborde.png" class="logo img-fluid" alt="Fundación Munay Huasi">
-                </a>
+      <div class="container">
+        <!-- Logo de la Fundación -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="imagenes/logo/logo-sinborde.png"
+            srcset="
+              imagenes/logo/logo-sinborde.webp,
+              imagenes/logo/logo-sinborde.png
+            "
+            class="logo img-fluid"
+            alt="Fundación Munay Huasi"
+          />
+        </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <!-- Boton hamburguesa para responsive -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#top">Inicio</a>
-                        </li>
+        <!-- Items de la barra de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#top">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_2">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_3">Causes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_4">Volunteer</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link click-scroll dropdown-toggle"
+                href="#section_5"
+                id="navbarLightDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >News</a
+              >
+              <ul
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarLightDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="news.html">News Listing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="news-detail.html"
+                    >News Detail</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_6">Contacto</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link custom-btn custom-border-btn btn"
+                href="#section4"
+                >Colaborar</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">Nosotros</a>
-                        </li>
+    <!-- Cuerpo de la página -->
+    <main>
+      <!-- Sección carrusel principal -->
+      <section class="hero-section hero-section-full-height">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-12 p-0">
+              <!-- Carrusel -->
+              <div
+                id="hero-slide"
+                class="carousel carousel-fade slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <!-- Primer item del Carrusel -->
+                  <div class="carousel-item active">
+                    <picture>
+                      <source
+                        srcset="imagenes/carrusel/imagen1-carrusel.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="imagenes/carrusel/imagen1-carrusel.jpg"
+                        type="image/jpg"
+                      />
+                      <img
+                        src="imagenes/carrusel/imagen1-carrusel.jpg"
+                        class="carousel-image img-fluid"
+                        alt="Niños y equipo"
+                      />
+                    </picture>
+                    <div
+                      class="carousel-caption d-flex flex-column justify-content-end"
+                    >
+                      <h1>Juntos</h1>
+                      <p>
+                        por una inclusión real. Cambiando vidas a través del
+                        apoyo mutuo.
+                      </p>
+                    </div>
+                  </div>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Causes</a>
-                        </li>
+                  <!-- Segundo item del Carrusel -->
+                  <div class="carousel-item">
+                    <picture>
+                      <source
+                        srcset="imagenes/carrusel/imagen2-carrusel.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="imagenes/carrusel/imagen2-carrusel.jpg"
+                        type="image/jpg"
+                      />
+                      <img
+                        src="imagenes/carrusel/imagen2-carrusel.jpg"
+                        class="carousel-image img-fluid"
+                        alt="Director con los jóvenes"
+                      />
+                    </picture>
+                    <div
+                      class="carousel-caption d-flex flex-column justify-content-end"
+                    >
+                      <h1>Creando</h1>
+                      <p>
+                        un futuro inclusivo para todos. Sonrisas que nos
+                        inspiran.
+                      </p>
+                    </div>
+                  </div>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Volunteer</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link click-scroll dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
-
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="news.html">News Listing</a></li>
-
-                                <li><a class="dropdown-item" href="news-detail.html">News Detail</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_6">Contacto</a>
-                        </li>
-
-                        <li class="nav-item ms-3">
-                            <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Colaborar</a>
-                        </li>
-                    </ul>
+                  <!-- Tercer item del Carrusel -->
+                  <div class="carousel-item">
+                    <picture>
+                      <source
+                        srcset="imagenes/carrusel/imagen3-carrusel.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="imagenes/carrusel/imagen3-carrusel.jpg"
+                        type="image/jpg"
+                      />
+                      <img
+                        src="imagenes/carrusel/imagen3-carrusel.jpg"
+                        class="carousel-image img-fluid"
+                        alt="Equipo Munay Huasi"
+                      />
+                    </picture>
+                    <div
+                      class="carousel-caption d-flex flex-column justify-content-end"
+                    >
+                      <h1>Nuestro</h1>
+                      <h1 style="margin-top: -5%">equipo</h1>
+                      <p>
+                        tu familia. La unión hace la fuerza: ¡Somos Munay Huasi!
+                      </p>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- Botones de control del Carrusel -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#hero-slide"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#hero-slide"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
             </div>
-        </nav>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de bienvenida -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="row">
+            <!-- Título -->
+            <div class="col-lg-10 col-12 text-center mx-auto">
+              <h2 class="mb-5">Bienvenidos a MUNAY HUASI</h2>
+            </div>
+
+            <!-- Imagen 1 -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+              <div
+                class="featured-block d-flex justify-content-center align-items-center"
+              >
+                <a href="#" class="d-block">
+                  <img
+                    src="imagenes/iconos/equipo.png"
+                    class="featured-block-image img-fluid"
+                    alt="Brazos juntos"
+                  />
+                  <p class="featured-block-text">
+                    Conoce a nuestro<br /><strong>Equipo</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+              <div
+                class="featured-block d-flex justify-content-center align-items-center"
+              >
+                <a href="#section_2" class="d-block">
+                  <img
+                    src="imagenes/iconos/conocenos.png"
+                    class="featured-block-image img-fluid"
+                    alt="Manos estrechadas corazón"
+                  />
+                  <p class="featured-block-text">
+                    <strong>Conoce</strong><br />nuestra Fundación
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+              <div
+                class="featured-block d-flex justify-content-center align-items-center"
+              >
+                <a href="#" class="d-block">
+                  <img
+                    src="imagenes/iconos/nuestracasa.png"
+                    class="featured-block-image img-fluid"
+                    alt="Mano con casa"
+                  />
+                  <p class="featured-block-text">
+                    Nuestra<br /><strong>Casa</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+              <div
+                class="featured-block d-flex justify-content-center align-items-center"
+              >
+                <a href="#section4" class="d-block">
+                  <img
+                    src="imagenes/iconos/donar.png"
+                    class="featured-block-image img-fluid"
+                    alt="Mano con corazón"
+                  />
+                  <p class="featured-block-text">
+                    <strong>Brindanos</strong><br />tu Ayuda
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Nosotros -->
+      <section class="section-padding section-bg" id="section_2">
+        <div class="container">
+          <div class="row">
+            <!-- Imagen de la sección -->
+            <div class="col-lg-6 col-12 mb-5">
+              <img
+                src="./imagenes/fachada.jpg"
+                class="custom-text-box-image img-fluid"
+                alt="Frente de la fundación"
+              />
+            </div>
+
+            <!-- Apartado sobre nosotros -->
+            <div class="col-lg-6 col-12">
+              <div class="custom-text-box">
+                <h2 class="mb-2">Nosotros</h2>
+                <h5 class="mb-3">Fundación MUNAY HUASI</h5>
+                <p class="mb-0">
+                  En Munay Huasi, creemos que todas las personas merecen la
+                  oportunidad de desarrollar su potencial y ser parte activa de
+                  la sociedad. Por eso, contamos con un equipo
+                  interdisciplinario de profesionales especializados en
+                  diferentes áreas, como psicología, terapia ocupacional,
+                  educación especial y más, que trabajan juntos para brindar un
+                  enfoque integral y personalizado a cada uno de nuestros
+                  beneficiarios.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="custom-text-box mb-lg-0">
+                    <h5 class="mb-3">Servicios</h5>
+                    <ul class="custom-list mt-2">
+                      <li class="custom-list-item d-flex">
+                        <i class="bi-check custom-text-box-icon me-2"></i>
+                        Centro de día
+                      </li>
+                      <li class="custom-list-item d-flex">
+                        <i class="bi-check custom-text-box-icon me-2"></i>
+                        Integración escolar
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="custom-text-box d-flex flex-wrap d-lg-block">
+                    <div class="counter-thumb">
+                      <div class="d-flex">
+                        <span
+                          class="counter-number"
+                          data-from="1"
+                          data-to="2016"
+                          data-speed="1000"
+                        ></span>
+                        <span class="counter-number-text"></span>
+                      </div>
+                      <span class="counter-text">Año de fundación</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Apartado sobre misión y visión -->
+            <div class="row d-flex flex-row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="custom-text-box">
+                  <h5 class="mb-3">Misión</h5>
+                  <p>
+                    Brindar atención integral, rehabilitación y apoyo a personas
+                    con discapacidad de todas las edades, promoviendo la
+                    inclusión y la igualdad de oportunidades. Trabajamos con un
+                    equipo interdisciplinario altamente calificado y
+                    comprometido, guiados por valores de respeto, empatía y
+                    solidaridad.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="custom-text-box">
+                  <h5 class="mb-3">Visión</h5>
+                  <p>
+                    Ser una institución líder en la atención y rehabilitación de
+                    personas con discapacidad en Salta, reconocida por su
+                    excelencia en servicios y compromiso con la inclusión y la
+                    igualdad de oportunidades. Nuestra visión es trabajar de
+                    manera sostenible y colaborativa para construir una sociedad
+                    más justa e inclusiva para todos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="volunteer-section section-padding" id="section_4">
+        <div class="container">
+          <div class="row">
+            <div class="text-center">
+              <h2 class="text-white">Nuestro hogar</h2>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de donación -->
+      <section class="cta-section section-padding section-bg" id="section4">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-5 col-12 ms-auto">
+              <h2 class="mb-0 text-center">
+                Podés ayudarnos <br />
+                a cambiar vidas.
+              </h2>
+            </div>
+
+            <div class="col-lg-5 col-12">
+              <div class="text-center">
+                <h2>Realizá una donación</h2>
+              </div>
+              <p>
+                Ayudá a nuestra causa haciendo una donación a través de
+                transferencia bancaria.
+              </p>
+              <div class="custom-text-box">
+                <h5>Datos de la cuenta bancaria</h5>
+                <ul>
+                  <li>
+                    <strong>Entidad bancaria:</strong> Banco de la Nación
+                    Argentina
+                  </li>
+                  <li><strong>Tipo de cuenta:</strong> Cuenta corriente</li>
+                  <li><strong>Número de cuenta:</strong> 123-456789/0</li>
+                  <li><strong>CBU:</strong> 0110123450001234567890</li>
+                  <li>
+                    <strong>Titular:</strong> Nombre del titular de la cuenta
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer de la web -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12 mb-4">
+            <img
+              src="imagenes/logo/logo-sinborde.webp"
+              class="logo img-fluid"
+              alt=""
+            />
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <h5 class="site-footer-title mb-3">Gracias por tu visita</h5>
+
+            <ul class="footer-menu">
+              <li class="footer-menu-item">
+                <p class="text-white d-flex">Te esperamos en nuestra casa</p>
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Newsroom</a>
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Causes</a>
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Become a volunteer</a>
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Partner with us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mx-auto">
+            <h5 class="site-footer-title mb-3">Información de contacto</h5>
+
+            <p class="text-white d-flex mb-2">
+              <i class="bi-telephone me-2"></i>
+
+              <a href="tel: 03873-424149" class="site-footer-link">
+                03873-424149
+              </a>
+            </p>
+
+            <p class="text-white d-flex">
+              <i class="bi-envelope me-2"></i>
+
+              <a
+                href="mailto:munaywasi_cdd@hotmail.com"
+                class="site-footer-link"
+              >
+                munaywasi_cdd@hotmail.com
+              </a>
+            </p>
+
+            <p class="text-white d-flex mt-3">
+              <i class="bi-geo-alt me-2"></i>
+              Gorriti 301 - Tartagal (Salta)
+            </p>
+
+            <a
+              href="https://goo.gl/maps/D4tezizmWzv7WusAA"
+              class="custom-btn btn mt-3"
+              target="_blank"
+              >Ver dirección</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-7 col-12">
+              <p class="copyright-text mb-0">
+                Copyright © 2036 <a href="#">Kind Heart</a> Charity Org. Design:
+                <a href="https://templatemo.com" target="_blank">TemplateMo</a>
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto"
+            >
+              <ul class="social-icon">
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link bi-twitter"></a>
+                </li>
+
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link bi-facebook"></a>
+                </li>
+
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link bi-instagram"></a>
+                </li>
+
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link bi-linkedin"></a>
+                </li>
+
+                <li class="social-icon-item">
+                  <a
+                    href="https://youtube.com/templatemo"
+                    class="social-icon-link bi-youtube"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
