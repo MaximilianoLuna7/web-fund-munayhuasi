@@ -1625,10 +1625,17 @@ blockquote::before {
     min-width: inherit;
     min-height: inherit;
   }
-  .carrusel__indicadores,
-  .carrusel__anterior,
-  .carrusel__siguiente {
+ 
+  .carrusel__indicadores {
     display: none;
+  }
+  
+  .carrusel__anterior {
+    margin-left: 50px;
+  }
+
+  .carrusel__siguiente {
+    margin-right: 50px;
   }
 }
 
